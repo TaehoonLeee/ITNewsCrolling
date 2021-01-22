@@ -6,11 +6,20 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <fragment
+        android:id="@+id/newsFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:name="androidx.navigation.fragment.NavHostFragment"
+        app:defaultNavHost="true"
+        app:navGraph="@navigation/nav_graph" />
+
     <com.google.android.material.bottomappbar.BottomAppBar
         android:id="@+id/bar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="bottom"
+        app:menu="@menu/bottom_app_bar"
         android:backgroundTint="@android:color/white"/>
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
@@ -19,6 +28,7 @@
         app:fabSize="normal"
         app:layout_anchor="@id/bar"
         android:backgroundTint="@android:color/holo_red_dark"
-        android:src="@drawable/ic_baseline_notifications_active_24"/>
+        android:src="@drawable/ic_baseline_notifications_active_24"
+        app:tint="@android:color/white"/>
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
