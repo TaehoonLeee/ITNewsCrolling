@@ -23,7 +23,7 @@ class NewsAdapter : RecyclerView.Adapter<NewsAdapter.NewsViewHolder>() {
     }
 
     fun setNewses(newsList : List<News>) {
-        this.newsList = newsList
+        this.newsList = newsList.filter { it.category.equals("technology") }
         notifyDataSetChanged()
     }
 
