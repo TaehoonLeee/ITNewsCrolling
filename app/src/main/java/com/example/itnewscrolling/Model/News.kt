@@ -6,20 +6,20 @@ import com.squareup.moshi.JsonClass
 @JsonClass(generateAdapter = true)
 data class NewsList(
     val status : String?,
-    val sources : List<News>
+    val totalResults : Long?,
+    val articles : List<News>
 )
 
 @JsonClass(generateAdapter = true)
 data class News(
-    @Json(name = "id")
-    val id : String?,
-    @Json(name = "name")
-    val name : String?,
+    @Json(name = "title")
+    val title : String?,
     @Json(name = "description")
     val description : String?,
     @Json(name = "url")
     val url : String?,
-    @Json(name = "category")
-    val category : String?
-
+    @Json(name = "urlToImage")
+    val urlToImage : String?,
+    @Json(name = "content")
+    val content : String?
 )

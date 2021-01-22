@@ -3,4 +3,5 @@
     <string name="search">search</string>
     <string name="searchingDescription">Searching what we want to surffing article</string>
     <string name="heart">like</string>
+    <string name="retry">Retry</string>
 </resources>

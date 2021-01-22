@@ -37,4 +37,6 @@
 
     </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
 
+    <include layout="@layout/layout_error" />
+
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
